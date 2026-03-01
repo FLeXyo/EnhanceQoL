@@ -910,6 +910,12 @@ addon.variables.cvarOptions = {
 		description = addon.L["ShowClassColorInNameplate"],
 		category = "cvarCategoryDisplay",
 	},
+	["nameplateShowOnlyNameForFriendlyPlayerUnits"] = {
+		trueValue = "1",
+		falseValue = "0",
+		description = addon.L["NameOnlyInFriendlyPlayerNameplate"],
+		category = "cvarCategoryDisplay",
+	},
 	["ShowTargetCastbar"] = {
 		trueValue = "1",
 		falseValue = "0",

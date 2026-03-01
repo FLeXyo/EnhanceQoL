@@ -1300,6 +1300,14 @@ local function createNameplatesCategory()
 			parentSection = expandable,
 		},
 		{
+			var = "NameOnlyInFriendlyPlayerNameplate",
+			text = L["NameOnlyInFriendlyPlayerNameplate"],
+			get = function() return getCVarOptionState("nameplateShowOnlyNameForFriendlyPlayerUnits") end,
+			func = function(value) setCVarOptionState("nameplateShowOnlyNameForFriendlyPlayerUnits", value) end,
+			default = false,
+			parentSection = expandable,
+		},
+		{
 			var = "UnitNamePlayerGuild",
 			text = L["UnitNamePlayerGuild"],
 			get = function() return getCVarOptionState("UnitNamePlayerGuild") end,
